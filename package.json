@@ -4,7 +4,9 @@
   "description": "website like genius but for tv shows",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass template/main.scss template/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
     "vue": "^2.5.22"
   }
 }

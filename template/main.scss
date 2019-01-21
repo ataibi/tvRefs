@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Work+Sans:100,300,600,900&subset=latin-ext');
+
+$yellow: #FFCE24;
+$lightBlue: #36ADE5;
+$darkBlue: #1358BF;
+$darkRed: #c83123;
+$lightRed: #F73A28;
+$orange: #ED6F06;
+$lightGray: #DDDDDD;
+$shadow: 0px 0px 4px 2px rgba(0, 0, 0, .2);
+
+body {
+  background-color: $lightGray;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+header {
+  background-color: $darkRed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  box-shadow: $shadow;
+  #siteTitle {
+    width: 200px;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 80px;
+    color: $yellow;
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+    .title {
+      font-weight: bold;
+      font-size: 3em;
+      text-transform: uppercase;
+      line-height: 60px;
+    }
+    .subTitle {
+      position: fixed;
+      font-weight: bold;
+      font-variant: small-caps;
+      font-size: 2em;
+      line-height: 85px;
+    }
+  }
+}
+
+#menu {
+  position: relative;
+  width: 600px;
+  background-color: #FFF;
+  margin: -27px auto auto auto;
+  box-sizing: border-box;
+  padding: 0;
+  height: 60px;
+  font-size: 1.1em;
+  box-shadow: $shadow;
+  color: $orange;
+  ul {
+    padding: 0;
+    padding-top: 1.1em;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      display: flex;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 900px;
+  margin: auto;
+  margin-top: 220px;
+  justify-content: space-between;
+  div {
+    box-shadow: $shadow;
+  }
+}
+
+#mainContent {
+  width: 65%;
+  clear: none;
+  background-color: #FFF;
+  box-sizing: border-box;
+  padding: 10px;
+  h1 {
+    text-align: center;
+    color: $darkBlue;
+  }
+}
+
+#sideContent {
+  width: 25%;
+  clear: none;
+  box-sizing: border-box;
+  color: $lightRed;
+  padding: 10px;
+  background-color: $yellow;
+  h1 {
+    text-align: center;
+  }
+}
