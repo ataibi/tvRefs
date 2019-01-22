@@ -58,7 +58,7 @@ header {
   position: relative;
   width: 600px;
   background-color: #FFF;
-  margin: -27px auto auto auto;
+  margin: 20px auto auto auto;
   box-sizing: border-box;
   padding: 0;
   height: 60px;
@@ -87,22 +87,19 @@ header {
   min-height: 900px;
   margin: auto;
   margin-top: 220px;
-  justify-content: space-between;
-  div {
-    box-shadow: $shadow;
-  }
+  justify-content: space-around;
 }
 
 #mainContent {
-  width: 65%;
+  width: 75%;
   clear: none;
-  background-color: #FFF;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   h1 {
     text-align: center;
     color: $darkBlue;
   }
+  border-right: solid 1px rgba(0, 0, 0, .2);
 }
 
 #sideContent {
@@ -110,8 +107,7 @@ header {
   clear: none;
   box-sizing: border-box;
   color: $lightRed;
-  padding: 10px;
-  background-color: $yellow;
+  padding: 10px 10px 10px 20px;
   h1 {
     text-align: center;
   }

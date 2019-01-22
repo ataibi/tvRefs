@@ -1,8 +1,12 @@
 const http = require('http')
-const fs = require('fs')
-const index = fs.readFileSync('template/index.html')
+const hostname = 'localhost'
+const port = 3000
 
-http.createServer((req, res) => {
-  res.write(index)
-}).listen(8000)
-console.log('listening on port 8000')
+const server = http.createServer((req, res) => {
+  res.statusCode = 200
+  res.setHeader('Content-Type')
+})
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`)
+})
